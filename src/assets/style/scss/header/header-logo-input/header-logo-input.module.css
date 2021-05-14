@@ -1,0 +1,12 @@
+.HeaderLogoInput_main {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center; }
+  .HeaderLogoInput_main__content {
+    height: 100%;
+    width: 75%;
+    background-color: green; }
+
+/*# sourceMappingURL=header-logo-input.module.css.map */

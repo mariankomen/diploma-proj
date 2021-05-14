@@ -1,13 +1,16 @@
 import React from 'react';
 
+//Styles
 import style from '../../assets/style/scss/app/app.module.css';
+//Components
+import Header from "../header/header";
 
 const App = () => {
     return (
-        <div className={style.main}>
-
+        <div>
+            <Header/>
         </div>
-    );
-};
+    )
+}
 
-export default App;
+export default App
