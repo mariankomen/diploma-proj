@@ -18,7 +18,6 @@ const Homepage = () => {
                 <h3 className={style.title}><NavLink to={'/'}>Резистори</NavLink></h3>
                 <Sliderr data={slider_urls[0]}/>
                 <h3 className={style.title}><NavLink to={'/'}>Транзистори</NavLink></h3>
-
                 <Sliderr data={slider_urls[1]}/>
 
             </div>

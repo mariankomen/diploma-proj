@@ -16,40 +16,19 @@ const Sliderr = (props) => {
         slidesToScroll: 1
     };
 
+    let SliderItem = props.data.map(i =>
+        <div>
+            <div className="sl_slide"><img
+                src={i}
+                alt=""/>
+            </div>
+        </div>
+    )
+
     return (
         <div className={'main'}>
             <Slider {...settings}>
-                <div>
-                    <div className="sl_slide"><img
-                        src={props.data.url_1}
-                        alt=""/></div>
-                </div>
-                <div>
-                    <div className="sl_slide"><img
-                        src={props.data.url_2}
-                        alt=""/></div>
-                </div>
-                <div>
-                    <div className="sl_slide"><img
-                        src={props.data.url_3}
-                        alt=""/></div>
-                </div>
-                <div>
-                    <div className="sl_slide"><img
-                        src={props.data.url_4}
-                        alt=""/></div>
-                </div>
-                <div>
-                    <div className="sl_slide"><img
-                        src={props.data.url_5}
-                        alt=""/></div>
-                </div>
-                <div>
-                    <div className="sl_slide"><img
-                        src={props.data.url_6}
-                        alt=""/></div>
-                </div>
-
+                {SliderItem}
             </Slider>
 
         </div>
