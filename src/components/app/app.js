@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter, Route} from "react-router-dom";
 
 //Styles
 import style from '../../assets/style/scss/app/app.module.css';
@@ -7,8 +8,13 @@ import Header from "../header/header";
 
 const App = () => {
     return (
+
         <div>
-            <Header/>
+            <BrowserRouter>
+                <Header/>
+                <Route path='/' render={() => {}}/>
+
+            </BrowserRouter>
         </div>
     )
 }
