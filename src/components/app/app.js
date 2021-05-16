@@ -5,6 +5,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import style from '../../assets/style/scss/app/app.module.css';
 //Components
 import Header from "../header/header";
+import Homepage from "../homepage/homepage";
 
 const App = () => {
     return (
@@ -12,7 +13,7 @@ const App = () => {
         <div>
             <BrowserRouter>
                 <Header/>
-                <Route path='/' render={() => {}}/>
+                <Route path='/home' render={() => <Homepage/>}/>
 
             </BrowserRouter>
         </div>
