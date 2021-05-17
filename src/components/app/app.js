@@ -6,6 +6,7 @@ import style from '../../assets/style/scss/app/app.module.css';
 //Components
 import Header from "../header/header";
 import Homepage from "../homepage/homepage";
+import Catalog from "../catalog/catalog";
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <BrowserRouter>
                 <Header/>
                 <Route path='/home' render={() => <Homepage/>}/>
+                <Route path='/catalog' render={() => <Catalog/>}/>
 
             </BrowserRouter>
         </div>

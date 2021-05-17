@@ -6,6 +6,7 @@ import {NavLink} from "react-router-dom";
 import CallIcon from '@material-ui/icons/Call';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { Button } from '@material-ui/core';
 
 const HeaderLogoInput = () => {
     return (
@@ -15,9 +16,9 @@ const HeaderLogoInput = () => {
                 <div className={style.input_and_phone}>
                     <div className={style.input_and_phone__contact}><p><CallIcon fontSize={"small"}/>(068)463-24-36 | 9:00 до 18:00 крім Сб та Нд</p></div>
                     <div className={style.input_and_phone__search_panel}><input type='text'/>
-                        <button>
+                        <Button color={'default'} variant={'contained'}  size={'small'}className={style.btn}>
                             <SearchIcon/>
-                        </button>
+                        </Button>
                     </div>
                 </div>
                 <div className={style.HeaderLogoInput_main__content__basket}>

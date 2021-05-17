@@ -12,20 +12,24 @@
     .main__row_elements ul {
       display: flex;
       justify-content: flex-end;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 8px; }
       .main__row_elements ul li {
         height: calc(100% - 5px);
         display: flex;
         align-items: center;
         margin-left: 15px;
+        margin-top: 20px;
         padding-left: 7px;
-        padding-right: 7px; }
+        padding-right: 7px;
+        list-style: none;
+        padding-bottom: 10px; }
         .main__row_elements ul li a {
-          color: #fff;
+          color: #fff !important;
           font-size: 1rem;
           text-transform: uppercase; }
         .main__row_elements ul li:hover {
-          border-bottom: 5px solid #db3939;
+          border-bottom: thick solid #db3939;
           cursor: pointer; }
 
 /*# sourceMappingURL=header-navbar.module.css.map */

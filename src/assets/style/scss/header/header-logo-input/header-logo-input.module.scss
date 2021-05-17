@@ -22,7 +22,7 @@
       span:first-child {
         position: relative;
         display: flex;
-        margin-left: 100px;
+        margin-left: 70px;
         justify-content: center;
         margin-top: 27px;
         span {
@@ -37,11 +37,12 @@
 
 .input_and_phone {
   margin-left: 75px;
+
   display: flex;
   flex-direction: column;
   input {
-    width: 300px;
-    height: 25px;
+    width: 300px !important;
+    height: 30px !important;
     font-size: 1rem;
     color: grey;
     padding: 3px;
@@ -54,8 +55,9 @@
     justify-content: center;
 
     button {
-      height: 31px;
-      width: 31px;
+      margin-top: -1px;
+      height: 29px;
+      width: 20px ;
       margin-left: 5px;
     }
   }
@@ -63,7 +65,7 @@
   &__contact {
     display: flex;
     font-size: 0.9rem;
-    margin-bottom: 7px;
+    margin-bottom: -9px;
   }
 
 
