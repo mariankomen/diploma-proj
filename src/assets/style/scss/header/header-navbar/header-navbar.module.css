@@ -14,6 +14,10 @@
       justify-content: flex-end;
       align-items: center;
       margin-bottom: 8px; }
+      .main__row_elements ul a {
+        color: #fff !important;
+        font-size: 1rem;
+        text-transform: uppercase; }
       .main__row_elements ul li {
         height: calc(100% - 5px);
         display: flex;
@@ -24,12 +28,11 @@
         padding-right: 7px;
         list-style: none;
         padding-bottom: 10px; }
-        .main__row_elements ul li a {
-          color: #fff !important;
-          font-size: 1rem;
-          text-transform: uppercase; }
         .main__row_elements ul li:hover {
           border-bottom: thick solid #db3939;
           cursor: pointer; }
+
+.act li {
+  border-bottom: thick solid #db3939; }
 
 /*# sourceMappingURL=header-navbar.module.css.map */

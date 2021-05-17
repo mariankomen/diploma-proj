@@ -9,19 +9,19 @@ const HeaderNavbar = () => {
         <div className={style.main}>
             <div className={style.main__row_elements}>
                 <ul>
-                    <li ><NavLink to={'/home'} >Головна</NavLink></li>
-                    <li><NavLink to={'/catalog'}>Каталог Товарів</NavLink></li>
-                    <li><NavLink to={'/rules'}>Правила</NavLink></li>
-                    <li><NavLink to={'/delivery'}>Доставка та оплата</NavLink></li>
-                    <li><NavLink to={'/map'}>Карта Сайту</NavLink></li>
-                    <li><NavLink to={'/projects'}>Наші Проекти</NavLink></li>
-                    <li><NavLink to={'/responds'}>Відгуки</NavLink></li>
-                    <li><NavLink to={'/contacts'}>Контакти</NavLink></li>
-                </ul>
-            </div>
+                    <NavLink to={'/home'} activeClassName={style.act}><li>Головна</li></NavLink>
+                    <NavLink to={'/catalog'} activeClassName={style.act}><li>Каталог Товарів</li></NavLink>
+                    <NavLink to={'/rules'} activeClassName={style.act}><li>Правила</li></NavLink>
+                    <NavLink to={'/delivery'} activeClassName={style.act}><li>Доставка та оплата</li></NavLink>
+                    <NavLink to={'/map'} activeClassName={style.act}><li>Карта Сайту</li></NavLink>
+                    <NavLink to={'/projects'} activeClassName={style.act}><li>Наші Проекти</li></NavLink>
+                    <NavLink to={'/responds'} activeClassName={style.act}><li>Відгуки</li></NavLink>
+                    <NavLink to={'/contacts'} activeClassName={style.act}><li>Контакти</li></NavLink>
+        </ul>
+</div>
 
-        </div>
-    );
+</div>
+);
 };
 
 export default HeaderNavbar;

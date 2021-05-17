@@ -18,6 +18,12 @@
       justify-content: flex-end;
       align-items: center;
       margin-bottom: 8px;
+
+      a {
+        color: $white !important;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
       li {
         height: calc(100% - 5px);
         display: flex;
@@ -29,11 +35,6 @@
         list-style: none;
         padding-bottom: 10px;
 
-        a {
-          color: $white !important;
-          font-size: 1rem;
-          text-transform: uppercase;
-        }
 
         &:hover {
           border-bottom: thick solid #db3939;
@@ -41,5 +42,12 @@
         }
       }
     }
+  }
+}
+
+.act{
+  li{
+    border-bottom: thick solid #db3939;
+
   }
 }

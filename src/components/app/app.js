@@ -7,6 +7,7 @@ import style from '../../assets/style/scss/app/app.module.css';
 import Header from "../header/header";
 import Homepage from "../homepage/homepage";
 import Catalog from "../catalog/catalog";
+import Resistors from "../resistors/resistors";
 
 const App = () => {
     return (
@@ -15,7 +16,8 @@ const App = () => {
             <BrowserRouter>
                 <Header/>
                 <Route path='/home' render={() => <Homepage/>}/>
-                <Route path='/catalog' render={() => <Catalog/>}/>
+                <Route path='/catalog' exact render={() => <Catalog/>}/>
+                <Route path='/catalog/resistors'  render={() => <Resistors/>}/>
 
             </BrowserRouter>
         </div>

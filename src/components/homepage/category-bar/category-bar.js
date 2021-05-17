@@ -32,60 +32,63 @@ export default function CategoryBar() {
                     <div className={`${style.tree_item}`}>
 
                         <TreeItem nodeId="1" label="Резистори">
-                            <NavLink to={'/rezistor'}><TreeItem nodeId="2" label="Резистори"/></NavLink>
-                            <TreeItem nodeId="3" label="Chrome"/>
-                            <TreeItem nodeId="4" label="Webstorm"/>
+                            <NavLink to={'/catalog/resistors'}><TreeItem nodeId="2" label="Резистори"/></NavLink>
                         </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
                     <TreeItem nodeId="5" label="Конденсатори">
-                            <TreeItem nodeId="6" label="Material-UI">
-                                <TreeItem nodeId="7" label="src">
-                                    <TreeItem nodeId="8" label="index.js"/>
-                                    <TreeItem nodeId="9" label="tree-view.js"/>
-                                </TreeItem>
-                            </TreeItem>
+                        <NavLink to={'/catalog/condensators'}><TreeItem nodeId="2" label="Конденсатори"/></NavLink>
                         </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="10" label="Котушки">
-                            <TreeItem nodeId="6" label="Material-UI">
-                                <TreeItem nodeId="7" label="src">
-                                    <TreeItem nodeId="8" label="index.js"/>
-                                    <TreeItem nodeId="9" label="tree-view.js"/>
-                                </TreeItem>
-                            </TreeItem>
-                        </TreeItem>
+                    <TreeItem nodeId="10" label="Транзистори">
+                        <NavLink to={'/catalog/transistors'}><TreeItem nodeId="2" label="Транзистори"/></NavLink>
+                    </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="11" label="Діоди">
-                            <TreeItem nodeId="6" label="Material-UI">
-                                <TreeItem nodeId="7" label="src">
-                                    <TreeItem nodeId="8" label="index.js"/>
-                                    <TreeItem nodeId="9" label="tree-view.js"/>
-                                </TreeItem>
-                            </TreeItem>
-                        </TreeItem>
+                    <TreeItem nodeId="11" label="Реле">
+                        <NavLink to={'/catalog/rele'}><TreeItem nodeId="2" label="Реле"/></NavLink>
+
+                    </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="12" label="Термістори">
-                            <TreeItem nodeId="6" label="Material-UI">
-                                <TreeItem nodeId="7" label="src">
-                                    <TreeItem nodeId="8" label="index.js"/>
-                                    <TreeItem nodeId="9" label="tree-view.js"/>
-                                </TreeItem>
-                            </TreeItem>
-                        </TreeItem>
+                    <TreeItem nodeId="12" label="Модеми і радіомодулі">
+                        <NavLink to={'/catalog/modems'}><TreeItem nodeId="2" label="Модеми і радіомодулі"/></NavLink>
+
+                    </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="13" label="Мікросхеми">
-                            <TreeItem nodeId="6" label="Material-UI">
-                                <TreeItem nodeId="7" label="src">
-                                    <TreeItem nodeId="8" label="index.js"/>
-                                    <TreeItem nodeId="9" label="tree-view.js"/>
-                                </TreeItem>
-                            </TreeItem>
-                        </TreeItem>
+                    <TreeItem nodeId="13" label="Термістори">
+                        <NavLink to={'/catalog/termistors'}><TreeItem nodeId="2" label="Термістори"/></NavLink>
+
+                    </TreeItem>
+                    </div>
+
+                    <div className={`${style.tree_item}`}>
+                    <TreeItem nodeId="14" label="Стабілітрони">
+                        <NavLink to={'/catalog/stabilitrons'}><TreeItem nodeId="2" label="Стабілітрони"/></NavLink>
+
+                    </TreeItem>
+                    </div>
+                    <div className={`${style.tree_item}`}>
+                    <TreeItem nodeId="14" label="Діоди">
+                        <NavLink to={'/catalog/diods'}><TreeItem nodeId="2" label="Діоди"/></NavLink>
+                    </TreeItem>
+                    </div>
+                    <div className={`${style.tree_item}`}>
+                    <TreeItem nodeId="14" label="Дроселі">
+                        <NavLink to={'/catalog/drosseli'}><TreeItem nodeId="2" label="Дроселі"/></NavLink>
+                    </TreeItem>
+                    </div>
+                    <div className={`${style.tree_item}`}>
+                    <TreeItem nodeId="14" label="Датчики">
+                        <NavLink to={'/catalog/datchik'}><TreeItem nodeId="2" label="Датчики"/></NavLink>
+                    </TreeItem>
+                    </div>
+                    <div className={`${style.tree_item}`}>
+                    <TreeItem nodeId="14" label="Оптоелектроніка та світло">
+                        <NavLink to={'/catalog/opto'}><TreeItem nodeId="2" label="Оптоелектроніка та світло"/></NavLink>
+                    </TreeItem>
                     </div>
                 </TreeView>
             </div>
