@@ -8,8 +8,12 @@ import Header from "../header/header";
 import Homepage from "../homepage/homepage";
 import Catalog from "../catalog/catalog";
 import Resistors from "../resistors/resistors";
+import ResistorInfoPage from "../resistors/resistor-info-page/resistor-info-page";
 
 const App = () => {
+
+    const data_res = require('../../data/resistors.json')
+
     return (
 
         <div>
@@ -17,7 +21,8 @@ const App = () => {
                 <Header/>
                 <Route path='/home' render={() => <Homepage/>}/>
                 <Route path='/catalog' exact render={() => <Catalog/>}/>
-                <Route path='/catalog/resistors'  render={() => <Resistors/>}/>
+                <Route path='/catalog/resistors'  exact render={() => <Resistors/>}/>
+                <Route path='/catalog/resistors/1'  render={() => <ResistorInfoPage/>}/>
 
             </BrowserRouter>
         </div>

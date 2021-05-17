@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from "../../assets/style/scss/resistors/resistors.module.css";
 import CategoryBar from "../homepage/category-bar/category-bar";
 import ResistorsItem from "./resistor-item/resistors-item";
