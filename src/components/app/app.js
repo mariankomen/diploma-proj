@@ -16,8 +16,6 @@ const App = () => {
 
     const data_res = require('../../data/resistors.json')
 
-
-
     return (
 
         <div>

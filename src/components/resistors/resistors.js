@@ -9,14 +9,8 @@ const Resistors = (props) => {
 
     const data = require('../../data/resistors.json')
 
-    let item = data.map(i => <ResistorsItem model={i.model}
-                                            useful={i.useful}
-                                            opir={i.opir}
-                                            power={i.power}
-                                            deviation={i.deviation}
-                                            id={i.id}
-                                            price={i.price}
-                                            setResID={props.setResID}
+    let item = data.map(i => <ResistorsItem setResID={props.setResID}
+                                            data={i}
     />)
     return (
         <div className={style.main}>
