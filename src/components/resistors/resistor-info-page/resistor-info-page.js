@@ -7,7 +7,6 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import {Button} from 'react-bootstrap'
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-
 const ResistorInfoPage = (props) => {
 
     const [count, setCount] = useState(1)
@@ -16,7 +15,6 @@ const ResistorInfoPage = (props) => {
     useEffect(() => {
             setAllPrice((count*props.data.price).toFixed(2))
     },[count])
-    // props.data.price
 
     return (
         <div className={style.main}>
@@ -89,6 +87,15 @@ const ResistorInfoPage = (props) => {
                                 <div>
                                     <Button variant="danger"
                                             className={style.btn}
+                                            onClick={() => {
+                                                props.setArr( [...props.arr, {
+                                                    img: props.data.url,
+                                                    name: `Резистор: ${props.data.model}`,
+                                                    count_item: count,
+                                                    price: props.data.price,
+                                                    all_price: parseInt(allprice)
+                                                }])
+                                            }}
                                     >
                                         Купити <ShoppingCartIcon fontSize={'small'}/>
                                     </Button>

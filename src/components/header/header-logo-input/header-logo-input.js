@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import style from '../../../assets/style/scss/header/header-logo-input/header-logo-input.module.css'
 import logo from '../../../assets/images/blackchip-logo.png';
@@ -8,7 +8,11 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { Button } from '@material-ui/core';
 
-const HeaderLogoInput = () => {
+const HeaderLogoInput = (props) => {
+
+    const sum = props.data.reduce(function (sum, {all_price}){
+        return sum + all_price
+    },0)
     return (
         <div className={style.HeaderLogoInput_main}>
             <div className={style.HeaderLogoInput_main__content}>
@@ -22,7 +26,7 @@ const HeaderLogoInput = () => {
                     </div>
                 </div>
                 <div className={style.HeaderLogoInput_main__content__basket}>
-                    <span><ShoppingBasketIcon fontSize={'large'}/> <span>Товарів: 0 (0.00 грн)</span></span>
+                    <span><NavLink to={'/basket'}><ShoppingBasketIcon fontSize={'large'}/> <span>Товарів: {props.data.length} ({sum} грн)</span></NavLink></span>
                 </div>
             </div>
         </div>

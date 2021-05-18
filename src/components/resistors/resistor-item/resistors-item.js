@@ -3,6 +3,7 @@ import style from "../../../assets/style/scss/resistors/resistors-item/resistor-
 import {Button, Card} from "react-bootstrap";
 import {BrowserRouter, NavLink, Route} from "react-router-dom";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+
 const ResistorsItem = (props) => {
 
     const [visible, setVisible] = useState(false)

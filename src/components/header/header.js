@@ -5,10 +5,10 @@ import HeaderNavbar from "./header-navbar/header-navbar";
 
 import style from '../../assets/style/scss/header/header.module.css';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className={style.header_main}>
-            <HeaderLogoInput/>
+            <HeaderLogoInput data={props.data}/>
             <HeaderNavbar/>
         </div>
     )
