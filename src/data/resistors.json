@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "0",
     "type": "resistor",
     "marka": "china-internation",
     "in_market": "120",
@@ -16,6 +16,23 @@
     "price": "0.2"
   },
   {
+    "id": "1",
+    "type": "resistor",
+    "marka": "china-internation",
+    "in_market": "120",
+    "weigth": "0.2",
+    "size": "0.02x0.02",
+    "info": "vsio garno, vsio abs",
+    "model": "p3487Y",
+    "useful": "Opir",
+    "opir": "12",
+    "power": "1.2",
+    "deviation": "0.5%",
+    "url": "",
+    "price": "0.3"
+
+  },
+  {
     "id": "2",
     "type": "resistor",
     "marka": "china-internation",
@@ -29,7 +46,7 @@
     "power": "1.2",
     "deviation": "0.5%",
     "url": "",
-    "price": "0.2"
+    "price": "0.4"
 
   },
   {
@@ -46,7 +63,7 @@
     "power": "1.2",
     "deviation": "0.5%",
     "url": "",
-    "price": "0.2"
+    "price": "0.5"
 
   },
   {
@@ -63,23 +80,6 @@
     "power": "1.2",
     "deviation": "0.5%",
     "url": "",
-    "price": "0.2"
-
-  },
-  {
-    "id": "5",
-    "type": "resistor",
-    "marka": "china-internation",
-    "in_market": "120",
-    "weigth": "0.2",
-    "size": "0.02x0.02",
-    "info": "vsio garno, vsio abs",
-    "model": "p3487Y",
-    "useful": "Opir",
-    "opir": "12",
-    "power": "1.2",
-    "deviation": "0.5%",
-    "url": "",
-    "price": "0.2"
+    "price": "0.6"
   }
 ]

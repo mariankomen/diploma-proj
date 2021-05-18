@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BrowserRouter, Route} from "react-router-dom";
 
 //Styles
@@ -12,7 +12,11 @@ import ResistorInfoPage from "../resistors/resistor-info-page/resistor-info-page
 
 const App = () => {
 
+    const [resID, setResID] = useState(0)
+
     const data_res = require('../../data/resistors.json')
+
+
 
     return (
 
@@ -21,8 +25,8 @@ const App = () => {
                 <Header/>
                 <Route path='/home' render={() => <Homepage/>}/>
                 <Route path='/catalog' exact render={() => <Catalog/>}/>
-                <Route path='/catalog/resistors'  exact render={() => <Resistors/>}/>
-                <Route path='/catalog/resistors/1'  render={() => <ResistorInfoPage/>}/>
+                <Route path='/catalog/resistors'  exact render={() => <Resistors setResID={setResID}/>}/>
+                <Route path='/catalog/resistors/:id' render={() => <ResistorInfoPage data={data_res[resID]}/>}  />
 
             </BrowserRouter>
         </div>

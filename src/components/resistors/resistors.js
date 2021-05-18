@@ -5,7 +5,7 @@ import ResistorsItem from "./resistor-item/resistors-item";
 
 
 
-const Resistors = () => {
+const Resistors = (props) => {
 
     const data = require('../../data/resistors.json')
 
@@ -16,6 +16,7 @@ const Resistors = () => {
                                             deviation={i.deviation}
                                             id={i.id}
                                             price={i.price}
+                                            setResID={props.setResID}
     />)
     return (
         <div className={style.main}>
