@@ -28,6 +28,7 @@ import Droseli from "../droseli/droseli";
 import DroseliInfoPage from "../droseli/droseli-info-page/droseli-info-page";
 import Datchyki from "../datchyki/datchyki";
 import DatchykyInfoPage from "../datchyki/datchyky-info-page/datchyky-info-page";
+import Footer from "../footer/footer";
 
 const App = () => {
 
@@ -117,6 +118,8 @@ const App = () => {
                 />}  />
 
             </BrowserRouter>
+            <Footer/>
+
         </div>
     )
 }
