@@ -29,6 +29,7 @@ import DroseliInfoPage from "../droseli/droseli-info-page/droseli-info-page";
 import Datchyki from "../datchyki/datchyki";
 import DatchykyInfoPage from "../datchyki/datchyky-info-page/datchyky-info-page";
 import Footer from "../footer/footer";
+import Rules from "../rules/rules";
 
 const App = () => {
 
@@ -56,6 +57,7 @@ const App = () => {
                 <Route path='/home' render={() => <Homepage/>}/>
                 <Route path='/basket' render={() => <Busket data={arr}/>}/>
                 <Route path='/catalog' exact render={() => <Catalog/>}/>
+                <Route path='/rules' exact render={() => <Rules/>}/>
 
                 <Route path='/catalog/resistors'  exact render={() => <Resistors setResID={setResID}/>}/>
                 <Route path='/catalog/resistors/:id' render={() => <ResistorInfoPage data={data_res[resID]}
