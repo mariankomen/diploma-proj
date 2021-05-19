@@ -18,6 +18,8 @@ import Rele from "../rele/rele";
 import ReleInfoPage from "../rele/rele-info-page/rele-info-page";
 import Modems from "../modems/modems";
 import ModemInfoPage from "../modems/modem-info-page/modem-info-page";
+import Termistors from "../termistors/termistors";
+import TermistorInfoPage from "../termistors/termistor-info-page/termistor-info-page";
 
 const App = () => {
 
@@ -28,6 +30,8 @@ const App = () => {
     const data_tran = require('../../data/transistors.json')
     const data_rele = require('../../data/rele.json')
     const data_modem = require('../../data/modems.json')
+    const data_term = require('../../data/termistors.json')
+
     const [arr,setArr] = useState([])
 
 
@@ -68,6 +72,12 @@ const App = () => {
                 <Route path='/catalog/modems/:id' render={() => <ModemInfoPage  data={data_modem[resID]}
                                                                                 arr={arr}
                                                                                 setArr={setArr}
+                />}  />
+
+                <Route path='/catalog/termistors'  exact render={() => <Termistors setResID={setResID}/>}/>
+                <Route path='/catalog/termistors/:id' render={() => <TermistorInfoPage  data={data_term[resID]}
+                                                                                        arr={arr}
+                                                                                        setArr={setArr}
                 />}  />
 
             </BrowserRouter>
