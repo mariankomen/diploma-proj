@@ -10,13 +10,21 @@ import Catalog from "../catalog/catalog";
 import Resistors from "../resistors/resistors";
 import ResistorInfoPage from "../resistors/resistor-info-page/resistor-info-page";
 import Busket from "../basket/busket";
+import Condensators from "../condensators/condensators";
+import CondensatorsInfoPage from "../condensators/condensators-info-page/condensators-info-page";
+import Transistors from "../transistors/transistors";
+import TransistorsInfoPage from "../transistors/transistors-info-page/transistors-info-page";
 
 const App = () => {
 
     const [resID, setResID] = useState(0)
 
     const data_res = require('../../data/resistors.json')
+    const data_cond = require('../../data/condensators.json')
+    const data_tran = require('../../data/transistors.json')
     const [arr,setArr] = useState([])
+
+
 
     return (
 
@@ -30,6 +38,18 @@ const App = () => {
                 <Route path='/catalog/resistors/:id' render={() => <ResistorInfoPage data={data_res[resID]}
                                                                                      arr={arr}
                                                                                      setArr={setArr}
+                />}  />
+
+                <Route path='/catalog/condensators'  exact render={() => <Condensators setResID={setResID}/>}/>
+                <Route path='/catalog/condensators/:id' render={() => <CondensatorsInfoPage data={data_cond[resID]}
+                                                                                            arr={arr}
+                                                                                            setArr={setArr}
+                />}  />
+
+                <Route path='/catalog/transistors'  exact render={() => <Transistors setResID={setResID}/>}/>
+                <Route path='/catalog/transistors/:id' render={() => <TransistorsInfoPage  data={data_tran[resID]}
+                                                                                            arr={arr}
+                                                                                            setArr={setArr}
                 />}  />
 
             </BrowserRouter>

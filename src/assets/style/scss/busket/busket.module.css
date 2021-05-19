@@ -20,6 +20,7 @@
     width: 32.5%;
     height: 30px;
     border: 1px solid silver;
+    border-left: none;
     display: flex;
     justify-content: center; }
     .main__second p {
@@ -28,6 +29,7 @@
     width: 32.5%;
     height: 30px;
     border: 1px solid silver;
+    border-left: none;
     display: flex;
     justify-content: center; }
     .main__third p {
@@ -36,6 +38,7 @@
     width: 10%;
     height: 30px;
     border: 1px solid silver;
+    border-left: none;
     display: flex;
     justify-content: center; }
     .main__four p {
@@ -44,6 +47,7 @@
     width: 10%;
     height: 30px;
     border: 1px solid silver;
+    border-left: none;
     display: flex;
     justify-content: center; }
     .main__five p {

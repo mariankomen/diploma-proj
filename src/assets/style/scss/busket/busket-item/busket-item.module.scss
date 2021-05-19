@@ -10,7 +10,7 @@
   }
 
   &__first{
-    width: 15%;
+    width: calc(15% - 1px);
     height: 95px;
     border-bottom: 0.5px solid silver;
     border-left: 0.5px solid silver;
