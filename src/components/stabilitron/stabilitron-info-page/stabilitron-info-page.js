@@ -7,7 +7,7 @@ import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
-const TermistorInfoPage = (props) => {
+const StabilitronInfoPage = (props) => {
     const [count, setCount] = useState(1)
     const [allprice, setAllPrice] = useState(props.data.price)
 
@@ -24,7 +24,7 @@ const TermistorInfoPage = (props) => {
 
 
                 <div className={style.info}>
-                    <div className={style.info__title}><h5>Термістор {props.data.model}, {props.data.opir}</h5></div>
+                    <div className={style.info__title}><h5>Стабілітрон {props.data.model}</h5></div>
                     <div className={style.info__photo_desc}>
                         <div className={style.info__photo}>
                             <img src={props.data.url}/>
@@ -89,7 +89,7 @@ const TermistorInfoPage = (props) => {
                                             onClick={() => {
                                                 props.setArr( [...props.arr, {
                                                     img: props.data.url,
-                                                    name: `Термістор: ${props.data.model}`,
+                                                    name: `Стабілітрон: ${props.data.model}`,
                                                     count_item: count,
                                                     price: props.data.price,
                                                     all_price: parseInt(allprice)
@@ -115,12 +115,12 @@ const TermistorInfoPage = (props) => {
                             </p>
                             <p>Технічні характеристики:</p>
                             <ul>
-                                <li>Виробник: {props.data.proizvoditel}</li>
-                                <li>Опір: {props.data.opir}</li>
-                                <li>Застосування: {props.data.usage}</li>
-                                <li>Максимальний струм: {props.data.max_tok} А</li>
-                                <li>Тип: {props.data.type}</li>
-                                <li>Розмір: {props.data.size}</li>
+                                <li>Корпус: {props.data.korpus}</li>
+                                <li>Напруга стабілізації: {props.data.napruga}</li>
+                                <li>Струм стабілізації: {props.data.strum}</li>
+                                <li>Потужність: {props.data.potuzhn} А</li>
+                                <li>Монтаж: {props.data.montazh}</li>
+                                <li>Температурний коефіцієнт: {props.data.temp_kof}</li>
                             </ul>
                         </div>
                     </div>
@@ -130,4 +130,4 @@ const TermistorInfoPage = (props) => {
     );
 };
 
-export default TermistorInfoPage;
+export default StabilitronInfoPage;
