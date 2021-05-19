@@ -22,18 +22,26 @@ import Termistors from "../termistors/termistors";
 import TermistorInfoPage from "../termistors/termistor-info-page/termistor-info-page";
 import Stabilitrons from "../stabilitron/stabilitrons";
 import StabilitronInfoPage from "../stabilitron/stabilitron-info-page/stabilitron-info-page";
+import Diods from "../diods/diods";
+import DiodInfoPage from "../diods/diod-info-page/diod-info-page";
+import Droseli from "../droseli/droseli";
+import DroseliInfoPage from "../droseli/droseli-info-page/droseli-info-page";
+import Datchyki from "../datchyki/datchyki";
+import DatchykyInfoPage from "../datchyki/datchyky-info-page/datchyky-info-page";
 
 const App = () => {
 
     const [resID, setResID] = useState(0)
 
-    const data_res = require('../../data/resistors.json')
-    const data_cond = require('../../data/condensators.json')
-    const data_tran = require('../../data/transistors.json')
-    const data_rele = require('../../data/rele.json')
+    const data_res   = require('../../data/resistors.json')
+    const data_cond  = require('../../data/condensators.json')
+    const data_tran  = require('../../data/transistors.json')
+    const data_rele  = require('../../data/rele.json')
     const data_modem = require('../../data/modems.json')
-    const data_term = require('../../data/termistors.json')
-    const data_stab = require('../../data/stabilitrons.json')
+    const data_term  = require('../../data/termistors.json')
+    const data_stab  = require('../../data/stabilitrons.json')
+    const data_diod  = require('../../data/diods.json')
+    const data_dros  = require('../../data/droseli.json')
 
     const [arr,setArr] = useState([])
 
@@ -88,6 +96,24 @@ const App = () => {
                 <Route path='/catalog/stabilitrons/:id' render={() => <StabilitronInfoPage  data={data_stab[resID]}
                                                                                             arr={arr}
                                                                                             setArr={setArr}
+                />}  />
+
+                <Route path='/catalog/diods'  exact render={() => <Diods setResID={setResID}/>}/>
+                <Route path='/catalog/diods/:id' render={() => <DiodInfoPage  data={data_diod[resID]}
+                                                                              arr={arr}
+                                                                              setArr={setArr}
+                />}  />
+
+                <Route path='/catalog/drosseli'  exact render={() => <Droseli setResID={setResID}/>}/>
+                <Route path='/catalog/drosseli/:id' render={() => <DroseliInfoPage  data={data_dros[resID]}
+                                                                                    arr={arr}
+                                                                                    setArr={setArr}
+                />}  />
+
+                <Route path='/catalog/datchik'  exact render={() => <Datchyki setResID={setResID}/>}/>
+                <Route path='/catalog/datchik/:id' render={() => <DatchykyInfoPage  data={data_dros[resID]}
+                                                                                    arr={arr}
+                                                                                    setArr={setArr}
                 />}  />
 
             </BrowserRouter>
