@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import style from '../../assets/style/scss/busket/busket.module.css'
 import BusketItem from "./busket-item/busket-item";
+import {NavLink} from "react-router-dom";
 
 const Busket = (props) => {
 
@@ -27,7 +28,7 @@ const Busket = (props) => {
                 <div className={style.all__item}><p>{sum} грн.</p></div>
             </div>
 
-            <div className={style.oforml}>ОФОРМИТИ ЗАМОВЛЕННЯ</div>
+                <div className={style.oforml}><NavLink to={'/delivery_information'}>ОФОРМИТИ ЗАМОВЛЕННЯ</NavLink></div>
 
             </div>
         </div>

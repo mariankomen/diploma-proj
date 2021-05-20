@@ -32,6 +32,7 @@ import Footer from "../footer/footer";
 import Rules from "../rules/rules";
 import Contacts from "../contacts/contacts";
 import Dostavka from "../dostavka/dostavka";
+import Checkout from "../delivery_pay_component/Checkout";
 
 const App = () => {
 
@@ -50,7 +51,6 @@ const App = () => {
     const [arr,setArr] = useState([])
 
 
-
     return (
 
         <div>
@@ -62,6 +62,8 @@ const App = () => {
                 <Route path='/rules' exact render={() => <Rules/>}/>
                 <Route path='/contacts' exact render={() => <Contacts/>}/>
                 <Route path='/delivery' exact render={() => <Dostavka/>}/>
+
+                <Route path='/delivery_information' exact render={() => <Checkout data={arr}/>}/>
 
                 <Route path='/catalog/resistors'  exact render={() => <Resistors setResID={setResID}/>}/>
                 <Route path='/catalog/resistors/:id' render={() => <ResistorInfoPage data={data_res[resID]}
