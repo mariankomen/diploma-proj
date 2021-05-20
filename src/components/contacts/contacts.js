@@ -3,7 +3,8 @@ import React, {useState} from 'react';
 import style from '../../assets/style/scss/contacts/contacts.module.css'
 import WayBlock from "../way-block/way-block";
 
-import img from '../../assets/images/blackchip-logo.png'
+import img from '../../assets/images/header-new.png'
+// import img from '../../assets/images/blackchip-logo.png'
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
