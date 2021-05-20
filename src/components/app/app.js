@@ -33,6 +33,7 @@ import Rules from "../rules/rules";
 import Contacts from "../contacts/contacts";
 import Dostavka from "../dostavka/dostavka";
 import Checkout from "../delivery_pay_component/Checkout";
+import Vidgyky from "../vidguky/vidgyky";
 
 const App = () => {
 
@@ -62,6 +63,7 @@ const App = () => {
                 <Route path='/rules' exact render={() => <Rules/>}/>
                 <Route path='/contacts' exact render={() => <Contacts/>}/>
                 <Route path='/delivery' exact render={() => <Dostavka/>}/>
+                <Route path='/responds' exact render={() => <Vidgyky/>}/>
 
                 <Route path='/delivery_information' exact render={() => <Checkout data={arr}/>}/>
 

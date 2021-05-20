@@ -18,10 +18,8 @@ export default function AddressForm(props) {
                         id="firstName"
                         name="firstName"
                         label="Ім'я"
-                        value={props.Name}
                         fullWidth
                         autoComplete="given-name"
-                        onChange={(e) => props.setName(e.target.value)}
                     />
                 </Grid>
                 <Grid item xs={12} sm={6}>

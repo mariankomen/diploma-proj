@@ -17,7 +17,6 @@
         width: 25%;
         padding: 15px;
         padding-left: 40px;
-        //border: 1px solid red;
 
         img {
           width: 75%;
@@ -59,10 +58,8 @@
       justify-content: center;
       margin-top: 15px;
       width: 100%;
-      //padding-left: 10px;
 
       height: 45px;
-      //border: 1px solid red;
       &:last-child{
         height: 400px;
 
@@ -72,7 +69,6 @@
         margin-top: 5px;
         width: 18% !important;
         text-align: end;
-        //border: 1px solid red;
       }
 
       &__in {
@@ -80,7 +76,6 @@
         margin-left: 30px;
         input {
           width: 100%;
-          //height: 35px;
           padding: 8px;
         }
         textarea {
@@ -94,6 +89,10 @@
 
 }
 .btn {
-  margin-left: 90%;
+  padding-left: 40px;
+  width: 110%;
+  display: flex;
+  justify-content: end;
+  margin-left: 85%;
   margin-top: -5%;
 }

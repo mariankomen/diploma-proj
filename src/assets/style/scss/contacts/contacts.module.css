@@ -55,7 +55,11 @@
         padding: 8px; }
 
 .btn {
-  margin-left: 90%;
+  padding-left: 40px;
+  width: 110%;
+  display: flex;
+  justify-content: end;
+  margin-left: 85%;
   margin-top: -5%; }
 
 /*# sourceMappingURL=contacts.module.css.map */
