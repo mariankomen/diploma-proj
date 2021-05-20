@@ -10,12 +10,14 @@
 
   &__content {
     height: 100%;
-    width: 75%;
+    width: 80%;
     display: flex;
     align-items: center;
-    img {
-      width: 33.3%;
-      height: 75%;
+    a{
+      img {
+        width: 73.3%;
+        height: 75%;
+      }
     }
 
     &__basket {
@@ -36,7 +38,7 @@
 }
 
 .input_and_phone {
-  margin-left: 75px;
+  margin-left: -65px;
   margin-top: 30px;
 
   display: flex;

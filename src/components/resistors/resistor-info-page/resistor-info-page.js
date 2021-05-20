@@ -75,10 +75,10 @@ const ResistorInfoPage = (props) => {
                                     </span>
                                     <span className={style.sht}><Button variant="danger" size={'sm'}
                                             onClick={() => {
-                                                if(count > 0){
+                                                if(count > 1){
                                                     setCount(count - 1)
                                                 } else {
-                                                    setCount(0)
+                                                    setCount(1)
                                                 }
                                             }}
                                     ><ArrowDropDownIcon/></Button> <h3>/шт</h3></span>

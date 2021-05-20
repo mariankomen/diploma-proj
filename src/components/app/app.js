@@ -57,6 +57,7 @@ const App = () => {
         <div>
             <BrowserRouter>
                 <Header data={arr}/>
+                <Route path='/' exact render={() => <Homepage/>}/>
                 <Route path='/home' render={() => <Homepage/>}/>
                 <Route path='/basket' render={() => <Busket data={arr}/>}/>
                 <Route path='/catalog' exact render={() => <Catalog/>}/>
