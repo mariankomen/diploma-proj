@@ -30,6 +30,8 @@ import Datchyki from "../datchyki/datchyki";
 import DatchykyInfoPage from "../datchyki/datchyky-info-page/datchyky-info-page";
 import Footer from "../footer/footer";
 import Rules from "../rules/rules";
+import Contacts from "../contacts/contacts";
+import Dostavka from "../dostavka/dostavka";
 
 const App = () => {
 
@@ -58,6 +60,8 @@ const App = () => {
                 <Route path='/basket' render={() => <Busket data={arr}/>}/>
                 <Route path='/catalog' exact render={() => <Catalog/>}/>
                 <Route path='/rules' exact render={() => <Rules/>}/>
+                <Route path='/contacts' exact render={() => <Contacts/>}/>
+                <Route path='/delivery' exact render={() => <Dostavka/>}/>
 
                 <Route path='/catalog/resistors'  exact render={() => <Resistors setResID={setResID}/>}/>
                 <Route path='/catalog/resistors/:id' render={() => <ResistorInfoPage data={data_res[resID]}

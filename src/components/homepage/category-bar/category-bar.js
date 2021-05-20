@@ -71,25 +71,16 @@ export default function CategoryBar() {
                     </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="14" label="Діоди">
+                    <TreeItem nodeId="15" label="Діоди">
                         <NavLink to={'/catalog/diods'}><TreeItem nodeId="2" label="Діоди"/></NavLink>
                     </TreeItem>
                     </div>
                     <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="14" label="Дроселі">
+                    <TreeItem nodeId="16" label="Дроселі">
                         <NavLink to={'/catalog/drosseli'}><TreeItem nodeId="2" label="Дроселі"/></NavLink>
                     </TreeItem>
                     </div>
-                    <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="14" label="Датчики">
-                        <NavLink to={'/catalog/datchik'}><TreeItem nodeId="2" label="Датчики"/></NavLink>
-                    </TreeItem>
-                    </div>
-                    <div className={`${style.tree_item}`}>
-                    <TreeItem nodeId="14" label="Оптоелектроніка та світло">
-                        <NavLink to={'/catalog/opto'}><TreeItem nodeId="2" label="Оптоелектроніка та світло"/></NavLink>
-                    </TreeItem>
-                    </div>
+
                 </TreeView>
             </div>
         </div>

@@ -16,6 +16,7 @@ const Catalog = () => {
                 <CategoryBar/>
 
             </div>
+            
             <div className={style.main__content}>
 
                 {items}

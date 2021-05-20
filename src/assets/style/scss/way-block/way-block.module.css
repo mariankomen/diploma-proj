@@ -1,7 +1,5 @@
 .main {
-  width: 75%;
   margin: 0 auto;
-  height: 400px;
   border: 1px solid #ff0000;
   margin-top: 23px;
   font-size: 14px; }
@@ -10,9 +8,7 @@
     flex-direction: row;
     height: 32px; }
     .main__block:first-child {
-      border-left: 1px solid silver;
-      border-top: 1px solid silver;
-      border-bottom: 1px solid silver;
+      border: 1px solid silver;
       padding-left: 20px; }
     .main__block__item {
       display: flex;

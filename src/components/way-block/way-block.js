@@ -20,21 +20,7 @@ const WayBlock = (props) => {
         <div>
             {/*Початок стрілки*/}
             <div className={style.main__block}>
-                {/*<div className={style.main__block__item}>*/}
-                {/*    <p><NavLink to={'/home'}>Головна</NavLink></p>*/}
-                {/*    <div className={style.arrow}>*/}
-                {/*        <div className={style.arrow__item}></div>*/}
-                {/*        <div className={style.arrow__item}></div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/*<div className={style.main__block__item}>*/}
 
-                {/*    <p><NavLink to={'/rules'}>Правила</NavLink></p>*/}
-                {/*    <div className={style.arrow}>*/}
-                {/*        <div className={style.arrow__item}></div>*/}
-                {/*        <div className={style.arrow__item}></div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 {item}
             </div>
             {/*Кінець стрілки*/}
