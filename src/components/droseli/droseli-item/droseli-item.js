@@ -12,7 +12,7 @@ const DroseliItem = (props) => {
         <div>
             <div className={style.main}>
                 <Card style={{ width: '16rem', height: "440px"}}>
-                    <Card.Img variant="top" src={props.data.url} style={{width: '100%', height:"170px"}} />
+                    <Card.Img variant="top" src={props.data.url} style={{width: '80%', height:"170px", margin:"0 auto"}} />
                     <Card.Body>
                         <Card.Title>Дроссель: {props.data.model}</Card.Title>
                         <Card.Text>

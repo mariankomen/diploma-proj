@@ -20,33 +20,33 @@
     "id": "1",
 
     "proizvoditel": "Murata",
-    "opir": "10 кОм",
-    "usage": "Вимірювання",
+    "opir": "100 кОм",
+    "usage": "Запобігання",
     "max_tok": "0.031",
     "type": "NTC",
-    "size": "0603",
+    "size": "0805",
 
-    "in_market": "122",
-    "info": "NTC термістор, 10 kOhm, ±1%",
-    "model": "NCP18XH103F03RB",
-    "url": "http://media.digikey.com/photos/Murata%20Photos/NCP,GCM%20SERIES%200603.jpg",
-    "price": "4",
+    "in_market": "12",
+    "info": "NTC термістор; 0805; 4100K; -40...+150°C; 5%; 210 mW",
+    "model": "NTCS0805E3104JXT",
+    "url": "https://www.rcscomponents.kiev.ua/modules/Asers_Shop/images/productimages/cap.jpg",
+    "price": "7",
     "articul": "08218"
   },
   {
     "id": "2",
 
     "proizvoditel": "Murata",
-    "opir": "10 кОм",
+    "opir": "100 кОм",
     "usage": "Вимірювання",
-    "max_tok": "0.031",
+    "max_tok": "0.131",
     "type": "NTC",
-    "size": "0603",
+    "size": "3.3х3 мм",
 
     "in_market": "122",
-    "info": "NTC термістор, 10 kOhm, ±1%",
-    "model": "NCP18XH103F03RB",
-    "url": "http://media.digikey.com/photos/Murata%20Photos/NCP,GCM%20SERIES%200603.jpg",
+    "info": "NTC термістор; THT; 4190K; -40...+125°C; 500мВт",
+    "model": "NTCLE100E3104JB0",
+    "url": "https://www.rcscomponents.kiev.ua/modules/Asers_Shop/images/productimages/ntcle100e3104jb0.jpg",
     "price": "4",
     "articul": "08218"
   },
@@ -62,8 +62,8 @@
 
     "in_market": "122",
     "info": "NTC термістор, 10 kOhm, ±1%",
-    "model": "NCP18XH103F03RB",
-    "url": "http://media.digikey.com/photos/Murata%20Photos/NCP,GCM%20SERIES%200603.jpg",
+    "model": "NТP18X2303F03RB",
+    "url": "https://www.rcscomponents.kiev.ua/modules/Asers_Shop/images/productimages/ntcle100e3102jbo.jpg",
     "price": "4",
     "articul": "08218"
   },
@@ -80,7 +80,7 @@
     "in_market": "122",
     "info": "NTC термістор, 10 kOhm, ±1%",
     "model": "NCP18XH103F03RB",
-    "url": "http://media.digikey.com/photos/Murata%20Photos/NCP,GCM%20SERIES%200603.jpg",
+    "url": "https://www.rcscomponents.kiev.ua/modules/Asers_Shop/images/productimages/b59755b0115a070_sml.jpg",
     "price": "4",
     "articul": "08218"
   },
@@ -97,7 +97,7 @@
     "in_market": "122",
     "info": "NTC термістор, 10 kOhm, ±1%",
     "model": "NCP18XH103F03RB",
-    "url": "http://media.digikey.com/photos/Murata%20Photos/NCP,GCM%20SERIES%200603.jpg",
+    "url": "https://www.rcscomponents.kiev.ua/modules/Asers_Shop/images/productimages/b59955v120a70.jpg",
     "price": "4",
     "articul": "08218"
   }

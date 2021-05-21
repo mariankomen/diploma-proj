@@ -12,7 +12,7 @@ const ModemItem = (props) => {
         <div>
             <div className={style.main}>
                 <Card style={{ width: '16rem', height: "460px"}}>
-                    <Card.Img variant="top" src={props.data.url} style={{width: '100%', height:"170px"}} />
+                    <Card.Img variant="top" src={props.data.url} style={{width: '70%', height:"170px", margin:"0 auto"}} />
                     <Card.Body>
                         <Card.Title>Модем: {props.data.model}</Card.Title>
                         <Card.Text>

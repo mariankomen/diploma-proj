@@ -49,8 +49,8 @@ const Contacts = () => {
                     <img src={img}/>
                 </div>
                 <div>
-                    <h6>Інтернет-магазин Black Chip</h6>
-                    <p>м. Івано-Франківськ</p>
+                    <h6>Інтернет-магазин KomenTreepDiod</h6>
+                    <p>м. Львів</p>
                 </div>
                 <div className={style.phone}>
                     <div>
